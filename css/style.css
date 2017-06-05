@@ -1,0 +1,42 @@
+/*公用样式*/
+body{
+	margin: 0;
+	padding: 0;
+	background-color: #fff;
+	font-family: "微软雅黑";
+}
+
+left{
+	float: left;
+}
+
+right{
+	float: right;
+}
+
+a{
+	font-size: 12px;
+	text-decoration: none;
+}
+
+.w{
+	width: 1200px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/*恢复夫容器塌陷的高度*/
+.clear:after{
+	display: block;
+	content: "";
+	clear: both;
+}
+
+
+/*导航栏*/
+.top{
+	background-color: #e1f3fd;
+	height: 38px;
+	line-height: 38px;
+	min-width: 1200px;
+}
