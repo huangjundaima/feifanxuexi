@@ -144,7 +144,6 @@ a{
 /*logo栏*/
 .logo-1{
 	height: 112px;
-	background-color:yellow ;
 	line-height: 112px;
 	padding: 20px 0;
 	box-sizing: border-box;
@@ -497,4 +496,25 @@ a{
 
 .zhong .two .haha:hover span{
 	display: block;
+}
+
+
+/*最新开班*/
+.kaiban{
+	height: 310px;
+	margin-top: 50px;
+	background-color: darkgreen;
+}
+
+
+.kaiban .shang-1{
+	height: 40px;
+	width:100% ;
+	background-color: #4169E1;
+}
+
+.kaiban .xia-1{
+	height: 270px;
+	background-color: #EFC15F;
+	padding-top:25px;
 }
