@@ -89,6 +89,7 @@ a{
 	left: 0;
 	text-align: center;
 	display: none;
+	z-index: 999;
 }
 
 .top li .dao li{
@@ -160,6 +161,7 @@ a{
 
 .logo-1 .dianhua{
 	height: 72px;
+	line-height: 72px;
 }
 
 .logo-1 .dianhua ul{
@@ -228,14 +230,271 @@ a{
 	display: block;
 	width: 14px;
 	height: 14px;
-	background-color: #FFFFFF;
+	
 	border-radius: 50%;
 	float: left;
 	margin-right: 8px;
-	border: 1px solid red;
+	border: 1px solid #FFFFFF;
 }
 
 .banner .sh span.active{
 	border-color:#de2824;
 	background-color: #de2824;
+}
+
+
+/*课程*/
+.zhong{
+	height: 450px;
+	background-color: blueviolet;
+	position: relative;
+	margin-top: 30px;
+}
+
+.zhong>div{
+	height: inherit;
+}
+
+.zhong .ke{
+	background-color: red;
+	width: 220px;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+
+.zhong .ke ul{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+.zhong .ke ul li {
+	height: 40px;
+	line-height: 40px;
+	box-sizing: border-box;
+	border-bottom: 1px solid darkgrey;
+	border-left: 1px solid darkgrey;
+	border-right: 1px solid darkgrey;
+	padding-left: 20px;
+	
+}
+
+.zhong .ke ul li:first-child{
+	height: 50px;
+	line-height:50px ;
+	background-color: #dd2726;
+	border-left:none ;
+	border-right:none ;
+	
+}
+.zhong .ke ul li:first-child a{
+	
+	font-size: 16px !important;
+}
+
+.zhong .ke ul li:first-child:hover{
+	 background-color:#dd2726 ;
+}
+
+.zhong .ke ul li:first-child:hover a{
+	font-size: 16px !important;
+	color: #333333;
+	
+}
+
+.zhong .ke ul.da li a{
+	font-size: 14px;
+	margin-right:10px;
+}
+
+.zhong .ke ul li:hover{
+	background-color: #EEEEEE;
+}
+
+.zhong .ke ul li:hover a{
+	font-size: 16px;
+	color: #DD2726;
+}
+
+
+.zhong .ke ul li span a{
+	font-size: 10px !important;
+	color: darkgray;
+	margin: 0 13px;
+}
+
+.zhong .ke .xiao li{
+	height: 40px;
+} 
+
+.zhong .xinwen{
+	height: 450px;
+	background-color: yellow;
+	padding-left: 220px;
+	padding-right:200px;
+}
+
+.zhong .tui{
+	width: 200px;
+	background-color: aqua;	
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+
+/*新闻*/
+.xinwen .diyige{
+	height: 48px;
+	width: 100%;
+	background-color: #8A2BE2;
+	margin-bottom: 2px;
+}
+
+.xinwen .diyige ul{
+	margin: 0;
+	padding: 0;	
+	list-style: none;
+	height: inherit;
+	line-height: 48px;
+}
+ .xinwen .diyige ul li{
+ 	float: left;
+ 	margin: 0 22px;
+ 	width: 100px;
+ 	text-align:center;
+ }
+
+ .xinwen .diyige ul li a{
+ 	font-size: 16px;
+ 	
+ }
+
+.xinwen .diyige ul li:hover{
+	border-bottom:2px solid red;
+ 	box-sizing: border-box;
+	
+}
+
+.xinwen .diyige ul li:hover a{
+	color: red;
+}
+
+
+.xinwen .dierge .class{
+	height:100px ;
+	width: 390px;
+	padding: 16px 22px;
+	box-sizing: border-box;
+}
+
+.xinwen .dierge .class .tutu{
+	margin-right:24px ;
+}
+
+.xinwen .dierge .class .tutu img{
+	width: 50px;
+	height: 50ox;
+	border-radius: 50%;
+}
+
+.xinwen .dierge .class .tutu p{
+	margin: 0;
+	padding-left: 8px;
+	color: darkgray;
+	font-size: 12px;
+}
+
+.xinwen .dierge .class .zizi p{
+	margin:0 ;
+	padding: 0;
+	font-size: 12px;
+	color: darkgray;
+	
+}
+
+.xinwen .dierge .class .zizi p:first-child {
+	margin-bottom: 10px;
+	height: 20px;
+	
+}
+
+.xinwen .dierge .class .zizi a{
+	color: #333333;
+	margin: 0;
+	
+	font-size: 14px;
+}
+
+.xinwen .dierge .class .zizi a:hover{
+	color: red;
+}
+
+
+/*热门课程*/
+.zhong .tui .one {
+	height: 48px;
+	line-height: 48px;
+}
+
+.zhong .tui .one p{
+	margin: 0;	
+	
+}
+
+.zhong .two{
+	height: 120px;
+	width: 100%;
+	background-color: royalblue;
+	margin-bottom: 10px;
+	position: relative;
+}
+
+.zhong .two-1{
+	background-image: url(../img/tu/kex.jpg);
+	
+}
+
+.zhong .two-2{
+	background-image: url(../img/tu/kex2.jpg);
+}
+
+.zhong .two-3{
+	background-image: url(../img/tu/kex3.jpg);
+}
+
+.zhong .two .haha{
+	height: 30px;
+	line-height: 30px;
+	width: inherit;
+	background-color:rgba(0,0,0,0.5);
+	position: absolute;
+	bottom: 0px;
+}
+
+.zhong .two .haha p{
+	margin: 0;
+	text-align: center;
+	color: #FFFFFF;
+	font-size: 14px;
+}
+
+.zhong .two .haha span{
+	color: #EEEEEE;
+	font-size: 10px;
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	bottom: 3px;
+	left: 55px;
+	display:none;
+	
+}
+
+.zhong .two .haha:hover{
+	height: 50px;
+}
+
+.zhong .two .haha:hover span{
+	display: block;
 }
