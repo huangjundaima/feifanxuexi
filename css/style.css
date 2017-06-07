@@ -563,11 +563,11 @@ a{
 	display: none;
 	margin: 0;
 	padding: 0;
+	padding: 20px 0;
 }
 
 .kaiban .xia-1 ul:first-child{
 	display: block;
-	padding: 20px 0;
 }
 
 .kaiban .xia-1 ul li{
