@@ -290,15 +290,17 @@ a{
 .zhong .ke ul li:first-child a{
 	
 	font-size: 16px !important;
+	color: #FFFFFF;
 }
 
 .zhong .ke ul li:first-child:hover{
 	 background-color:#dd2726 ;
+	 
 }
 
 .zhong .ke ul li:first-child:hover a{
 	font-size: 16px !important;
-	color: #333333;
+	color: #FFFFFF;
 	
 }
 
@@ -342,20 +344,26 @@ a{
 	top: 0;
 }
 
+
 /*新闻*/
 .xinwen .diyige{
 	height: 48px;
 	width: 100%;
-	background-color: #8A2BE2;
+	background-color: ;
 	margin-bottom: 2px;
+	padding: 0 100px 0 22px;
+	
 }
 
 .xinwen .diyige ul{
 	margin: 0;
 	padding: 0;	
+	width: 740px;
 	list-style: none;
 	height: inherit;
 	line-height: 48px;
+	border-bottom: 1px solid #A9A9A9;
+	margin-right: 22px;
 }
  .xinwen .diyige ul li{
  	float: left;
@@ -501,20 +509,73 @@ a{
 
 /*最新开班*/
 .kaiban{
-	height: 310px;
+	height: 290px;
 	margin-top: 50px;
 	background-color: darkgreen;
 }
 
-
+/*开班课程*/
 .kaiban .shang-1{
 	height: 40px;
 	width:100% ;
 	background-color: #4169E1;
 }
 
+.kaiban .shang-1 ul{
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	height: 40px;
+	line-height: 40px;
+	border-bottom:1px solid #A9A9A9;
+	box-sizing: border-box;
+}
+.kaiban .shang-1 ul li{
+	float: left;
+	padding: 0 25px;
+	height: inherit !important;
+	box-sizing: border-box;
+	
+}
+
+.kaiban .shang-1 ul li:first-child a{
+	font-size: 18px;
+	margin-right: 150px;
+}
+
+.kaiban .shang-1 ul li:first-child{
+	margin-left: 0 ;
+	
+}
+
+.kaiban .shang-1 ul li.qiehuan{
+	border-bottom: 2px solid red;
+}
+
 .kaiban .xia-1{
-	height: 270px;
+	height: 250px;
 	background-color: #EFC15F;
-	padding-top:25px;
+	
+}
+
+.kaiban .xia-1 ul{
+	height: 250px;
+	display: none;
+	margin: 0;
+	padding: 0;
+}
+
+.kaiban .xia-1 ul:first-child{
+	display: block;
+	padding: 20px 0;
+}
+
+.kaiban .xia-1 ul li{
+	list-style: none;
+	height: 250px;
+	width: 260px;
+	background-color: black;
+	margin: 0 20px;
+	float: left;
+	
 }

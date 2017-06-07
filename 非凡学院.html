@@ -110,7 +110,6 @@
 					<li><a href="#">学历进修</a><span><a href="#">大专</a><a href="#">本科</a></span></li>
 				</ul>
 				<div class="zi">
-					
 				</div>
 			</div>
 			
@@ -263,10 +262,48 @@
 		<div class="kaiban w">
 			
 			<div class="shang-1">
-				
+				<ul>
+					<li><a href="#">最新开班</a></li>
+					<li><a href="#">网页设计</a></li>
+					<li><a href="#">网络营销</a></li>
+					<li><a href="#">UI交互设计</a></li>
+					<li><a href="#">服装设计</a></li>
+					<li><a href="#">室内设计</a></li>
+					<li><a href="#">模具设计</a></li>
+					<li><a href="#">影视美术</a></li>
+					<li><a href="#">网络工程</a></li>
+				</ul>
 			</div>
+			
 			<div class="xia-1">
-				
+					<ul style="background-color:red;">
+						<li></li>
+						<li></li>
+						<li></li>
+						<li></li>
+						
+					</ul>
+					<ul style="background-color:aqua;">
+						<li></li>
+					</ul>
+					<ul style="background-color:#4169E1;">
+						<li></li>
+					</ul>
+					<ul style="background-color:chartreuse;">
+						<li></li>
+					</ul>
+					<ul style="background-color: #8A2BE2;">
+						<li></li>
+					</ul>
+					<ul style="background-color:crimson;">
+						<li></li>
+					</ul>
+					<ul style="background-color:cornsilk;">
+						<li></li>
+					</ul>
+					<ul style="background-color:darkolivegreen;">
+						<li></li>
+					</ul>
 			</div>
 			
 		</div>
@@ -294,6 +331,18 @@
 			},5000);
 			
 			
+			//切换
+			
+			var shang = $(".kaiban .shang-1 ul li");//先获取到导航栏的li
+			var kaiban = $(".kaiban .xia-1 ul");//再获取到下面的ul（就是下面的课程内容）
+			//给获取到的li一个hover效果
+			shang.hover(function(){
+				var index=$(this).index();//先获取当前的li下标
+				if(index>0){   //因为第一个不动 所以要大于0
+				shang.removeClass("qiehuan").eq(index).addClass("qiehuan");//先给让所有的li都没有hover后的效果，然后再给上hover效果  前提：要先把效果写在style里面
+				kaiban.hide().eq(index-1).show();}//所有ul都影藏掉，让获取到的li那个ul显示
+				
+			});
 		</script>
 		
 		
