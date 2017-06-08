@@ -245,7 +245,7 @@ a{
 /*课程*/
 .zhong{
 	height: 450px;
-	background-color: blueviolet;
+	background-color:;
 	position: relative;
 	margin-top: 30px;
 }
@@ -255,7 +255,7 @@ a{
 }
 
 .zhong .ke{
-	background-color: red;
+	background-c;
 	width: 220px;
 	position: absolute;
 	top: 0;
@@ -331,7 +331,7 @@ a{
 
 .zhong .xinwen{
 	height: 450px;
-	background-color: yellow;
+	background-color:;
 	padding-left: 220px;
 	padding-right:200px;
 }
@@ -511,14 +511,14 @@ a{
 .kaiban{
 	height: 290px;
 	margin-top: 50px;
-	background-color: darkgreen;
+	background-color: da;
 }
 
 /*开班课程*/
 .kaiban .shang-1{
 	height: 40px;
 	width:100% ;
-	background-color: #4169E1;
+	background-color:;
 }
 
 .kaiban .shang-1 ul{
@@ -554,7 +554,7 @@ a{
 
 .kaiban .xia-1{
 	height: 250px;
-	background-color: #EFC15F;
+	background-color:;
 	
 }
 
@@ -574,8 +574,72 @@ a{
 	list-style: none;
 	height: 250px;
 	width: 260px;
-	background-color: black;
+	background-color:;
 	margin: 0 20px;
 	float: left;
 	
+}
+
+.kaiban .xia-1 ul li img{
+	
+	width: inherit;
+	height: 180px;
+}
+
+.kaiban .xia-1 ul li p{
+	margin: 8px 0;
+}
+
+
+.kaiban .xia-1 ul li span{
+	font-size: 14px;
+	color: #A9A9A9;
+	float: left;
+	
+}
+
+.kaiban .xia-1 ul li a{
+	float: right;
+	color: #A9A9A9;
+}
+
+
+
+/*表格*/
+
+.biaoge{
+	
+	height: 150px;
+	background-color:;
+	margin-top: 30px;
+}
+
+.biaoge table{
+	height: inherit;
+	width: 570px;
+	text-align: center;
+	
+}
+
+.biaoge table td{
+	margin: 0 20px;
+	font-size: 12px;
+	color: #333;
+}
+
+
+.biaoge table td:first-child{
+	text-align: left !important;
+}
+
+
+.biaoge table td a{
+	color: #34baf2;
+	
+}
+
+.biaoge table th{
+	font-size:14px;
+	color: #333;
+	border-bottom: 1px solid darkgray;
 }
