@@ -586,6 +586,43 @@
 			</ul>
 		</div>
 		
+		<div class="zuoping w">
+			
+			<div class="top-shang">
+				<ul>
+					<li><a href="#">学生作品</a></li>
+					<li><a href="#">UI交互设计</a></li>
+					<li><a href="#">网页设计</a></li>
+					<li><a href="#">淘宝美工</a></li>
+					<li><a href="#">室内设计</a></li>
+					<li><a href="#">机械模具</a></li>
+					<li><a href="#">摄影作品</a></li>
+				</ul>
+			</div>
+			<div class="xia-bottom">
+				<ul style="background-color: brown;">
+					<li></li>
+				</ul>
+				<ul style="background-color:blue;">
+					<li></li>
+				</ul>
+				<ul style="backround-color:darkgoldenrod;">
+					<li></li>
+				</ul>
+				<ul style="background-color:darkgreen;">
+					<li></li>
+				</ul>
+				<ul style="background-color: darkmagenta;">
+					<li></li>
+				</ul>
+				<ul style="background-color: chartreuse;">
+					<li></li>
+				</ul>
+			</div>
+			
+		</div>
+		
+		
 		<script type="text/javascript" src="js/jquery-2.1.0.js" ></script>
 		<script type="text/javascript">
 			var imges = $(".banner-tu li");
@@ -611,6 +648,7 @@
 			
 			var shang = $(".kaiban .shang-1 ul li");//先获取到导航栏的li
 			var kaiban = $(".kaiban .xia-1 ul");//再获取到下面的ul（就是下面的课程内容）
+			
 			//给获取到的li一个hover效果
 			shang.hover(function(){
 				var index=$(this).index();//先获取当前的li下标
@@ -618,6 +656,15 @@
 				shang.removeClass("qiehuan").eq(index).addClass("qiehuan");//先给让所有的li都没有hover后的效果，然后再给上hover效果  前提：要先把效果写在style里面
 				kaiban.hide().eq(index-1).show();}//所有ul都影藏掉，让获取到的li那个ul显示
 				
+			});
+			var zuoping =$(".zuoping .top-shang ul li");
+			var tupian = $(".zuoping .xia-bottom ul");
+			zuoping.hover(function(){
+				var index=$(this).index();
+				if(index>0){
+					zuoping.removeClass("huan").eq(index).addClass("huan");
+					tupian.hide().eq(index-1).show();
+				}
 			});
 		</script>
 		

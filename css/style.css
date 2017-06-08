@@ -700,3 +700,69 @@ a{
 margin: 12px 0;
 color: #333;
 }
+
+
+/*学生作品*/
+
+.zuoping{
+	height: 350px;
+	background-color: ;
+	margin-top: 20px;
+	position: relative;
+}
+
+.zuoping ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+
+.zuoping .top-shang ul{
+	height: 38px;
+	background-color: aqua;
+	line-height: 38px;
+	border-bottom: 1px solid yellow;
+}
+
+.zuoping .top-shang ul li{
+	float: left;
+	padding: 0 13px;
+}
+
+.zuoping .top-shang ul li:first-child{
+	margin-right: 200px;
+	padding: 0;
+}
+
+.zuoping .top-shang ul li:first-child a{
+	
+	font-size: 18px !important;
+}
+
+
+.zuoping .top-shang ul li.huan{
+	
+	border-bottom: 2px solid red;
+	color: red;
+}
+
+
+
+.zuoping .xia-bottom{
+	height: 310px;
+}
+
+.zuoping .xia-bottom ul{
+	height: 310px;
+	width:1200px ;
+	position: absolute;
+	top: 40px;
+	display: none;
+}
+
+.zuoping .xia-bottom ul:first-child{
+	display: block;
+}
+
+
