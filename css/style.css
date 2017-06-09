@@ -821,18 +821,19 @@ color: #333;
 .jiuye{
 	height: 280px;
 	margin-top:30px;
-	background-color:#eaf7fd;
+	background-color;
 	
 }
 
 .jiuye .jiuye-1{
 	height: 40px;
 	line-height: 40px;
-	background-color: #00FFFF;
+	background-col;
 }
 
 .jiuye .jiuye-1 p{
 	margin: 0;
+	font-size: 18px;
 }
 
 .jiuye .jiuye-1 a:hover{
@@ -840,21 +841,55 @@ color: #333;
 }
 
 
+.jiuye .jiuye-2{
+	position: relative;
+	top: 0;
+    position:0;
+    
+}
+
+.jiuye .jiuye-2 .zuobian{
+	height: 240px;
+	width: 72px;
+	background-color: #eaf7fd;
+	position: absolute;
+	top: 0;
+	left: 0;
+	font-size:40px ;
+	line-height: 240px;
+	color: #A9A9A9;
+	text-align: center;
+	
+}
+
+.jiuye .jiuye-2 .youbian{
+	height: 240px;
+	width: 72px;
+	font-size: 40px;
+	color: #A9A9A9;
+	text-align: center;
+	background-color: #EAF7FD;
+	position:absolute;
+	right: 0;
+	top: 0;
+	box-sizing: border-box;
+	line-height: 240px;
+	
+}
+
 .jiuye .jiuye-2 .box-chang{
 	height: 240px;
 	width: 1056px;
+	position: absolute;
+	top: 0;
+	left: 72px;
 	overflow: hidden;
-	position: relative;
+	background-color: #eaf7fd;
 }
 
 .jiuye .jiuye-2 ul{
-	list-style: none;
-	margin: 0;
-	padding: 0;
-	height: 240px;
 	width: 10000px;
-	left: 0;
-	position: absolute;
+	
 }
 
 .jiuye .jiuye-2 ul li{
@@ -863,33 +898,20 @@ color: #333;
 	box-sizing: border-box;
 	background-color:;
 	float: left;
-	margin-right:63px ;
-	overflow: hidden;
+	margin-right:56px ;
 	
 }
 
-.jiuye .jiuye-2 .zuobian{
-	text-align: center;
-	line-height: 240px;
-	font-size: 40px;
-	color: #A9A9A9;
+.jiuye .jiuye-2 ul li .mingzi{
+	width: 74px;
+	height:240px;
+	float: left;
+	padding:0 20px;
 }
 
-.jiuye .jiuye-2 .youbian{
-	position: absolute;
-	right: 0;
-	top: 0;
-	z-index: 999;
+.jiuye .jiuye-2 ul li .mingzi p{
+	margin: 0;
 	text-align: center;
-	line-height: 240px;
-	font-size: 40px;
-	color: #A9A9A9;
-	background-color:green;
-}
-
-
-.jiuye .jiuye-2 ul li:last-child{
-	margin-right:0 ;
 }
 
 .jiuye .jiuye-2 ul li img{
@@ -897,29 +919,27 @@ color: #333;
 	height: 74px;
 	border-radius: 50%;
 	margin-bottom:6px ;
+	margin-top: 70.5px;
 }
 
-.jiuye .jiuye-2 ul li p{
+
+
+.jiuye .jiuye-2 ul{
+	height: 240px;
 	margin: 0;
-	font-size: 14px;
-	color: #333333;
+	padding: 0;
+	list-style: none;
 }
 
-.jiuye .jiuye-2 ul li .mingzi{
-	width: 74px;
-	height:240px;
-	padding-top:67.5px;
-	float: left;
-	margin-right:20px ;
-	text-align:center ;
-}
+
 
 .jiuye .jiuye-2 ul li .jieshao{
 	float: left;
-	width: 216px;
+	width: 196px;
 	background-color:;
 	height: 240px;
 	padding: 30px 0 20px 0;
+	box-sizing: border-box;
 }
 
 .jiuye .jiuye-2 ul li .jieshao span{
@@ -931,6 +951,4 @@ color: #333;
 	color: #A9A9A9;
 	font-size: 12px;
 	line-height: 2em;
-	margin:20px 0;
 }
-

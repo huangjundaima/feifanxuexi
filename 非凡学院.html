@@ -914,13 +914,18 @@
 		</div>
 
 		<div class="jiuye w">
+
 			<div class="jiuye-1">
 				<p class="left">就业明星</p>
 				<a href="#" class="right">看全部></a>
 			</div>
-			<div class="jiuye-2 clear">
-				<div class="left zuobian" style="width: 72px;height: 240px;"><</div>
-				<div class="box-chang left" style="background-color: red;">
+
+			<div class="jiuye-2">
+				<div class="zuobian">
+					<span><</span>
+				</div>
+				
+				<div class="box-chang">
 					<ul>
 						<li>
 							<div class="mingzi">
@@ -954,7 +959,6 @@
 								<p>2016年我带着我对设计之梦的期待，进入非凡学院学习淘宝美工专业，学习过程中各位老师都非常nice，很敬业，仔细为我解答学习中遇到的困难与问题.....</p>
 								<p>就职：上海喔喂科技有限公司</p>
 							</div>
-
 						</li>
 						<li>
 							<div class="mingzi">
@@ -966,98 +970,97 @@
 								<p>2016年我带着我对设计之梦的期待，进入非凡学院学习淘宝美工专业，学习过程中各位老师都非常nice，很敬业，仔细为我解答学习中遇到的困难与问题.....</p>
 								<p>就职：上海喔喂科技有限公司</p>
 							</div>
-
 						</li>
+						
 					</ul>
 				</div>
-
-				<div class="left youbian" style="width: 72px;height: 240px;">
-					后
+				
+				<div class="youbian">
+					<span>></span>
 				</div>
 			</div>
-		</div>
 
-		<script type="text/javascript" src="js/jquery-2.1.0.js"></script>
-		<script type="text/javascript">
-			var imges = $(".banner-tu li");
-			var imgeCount = imges.length;
-			console.log(imges);
-			var index = 0;
-			for(var i = 0; i < imgeCount; i++) {
-				$(".sh").append("<span class='dian'></span>")
-			}
-			$(".sh").css("margin-left", "-" + ($(".sh").width() / 2) + "px").children().eq(0).addClass("active");
-			var points = $(".sh span");
-			//定时器
-			setInterval(function() {
-				imges.eq(index).fadeOut(200);
-				index = (index + 1) % imgeCount;
-				imges.eq(index).fadeIn(200);
-				points.removeClass("active").eq(index).addClass("active");
-
-			}, 5000);
-
-			/*这是学生明星的轮播*/
-
-			var mingxingli = $(".jiuye .jiuye-1 ul li");
-			var changCount = mingxingli.length;
-			var mingxingul = $(".jiuye .jiuye-1 ul");
-			index = 0;
-			setInterval(function() {
-				index = (index + 1) % changCount;
-				mingxingul.animate({
-					left: -mingxingli.width() * index + "px"
-				}, 500)
-
-			}, 1000);
-
-			//切换
-
-			var shang = $(".kaiban .shang-1 ul li"); //先获取到导航栏的li
-			var kaiban = $(".kaiban .xia-1 ul"); //再获取到下面的ul（就是下面的课程内容）
-
-			//给获取到的li一个hover效果
-			shang.hover(function() {
-				var index = $(this).index(); //先获取当前的li下标
-				if(index > 0) { //因为第一个不动 所以要大于0
-					shang.removeClass("qiehuan").eq(index).addClass("qiehuan"); //先给让所有的li都没有hover后的效果，然后再给上hover效果  前提：要先把效果写在style里面
-					kaiban.hide().eq(index - 1).show();
-				} //所有ul都影藏掉，让获取到的li那个ul显示
-
-			});
-			var zuoping = $(".zuoping .top-shang ul li");
-			var tupian = $(".zuoping .xia-bottom ul");
-			zuoping.hover(function() {
-				var index = $(this).index();
-				if(index > 0) {
-					zuoping.removeClass("huan").eq(index).addClass("huan");
-					tupian.hide().eq(index - 1).show();
+			<script type="text/javascript" src="js/jquery-2.1.0.js"></script>
+			<script type="text/javascript">
+				var imges = $(".banner-tu li");
+				var imgeCount = imges.length;
+				console.log(imges);
+				var index = 0;
+				for(var i = 0; i < imgeCount; i++) {
+					$(".sh").append("<span class='dian'></span>")
 				}
-			});
+				$(".sh").css("margin-left", "-" + ($(".sh").width() / 2) + "px").children().eq(0).addClass("active");
+				var points = $(".sh span");
+				//定时器
+				setInterval(function() {
+					imges.eq(index).fadeOut(200);
+					index = (index + 1) % imgeCount;
+					imges.eq(index).fadeIn(200);
+					points.removeClass("active").eq(index).addClass("active");
 
-			//图片放大
-			//获取到图片给了一个mouseenter事件
-			$(function() {
-				$(".zuoping .xia-bottom ul li img").mouseenter(function() {
-					var wValue = 1.3 * $(this).width(); //预设一个图片放大以后的宽度（这里是增加）
-					var hValue = 1.3 * $(this).height(); //预设一个图片以后的高度（这里是增加）
-					$(this).stop().animate({
-						width: wValue, //这是一个动画，动画运行结束后达到的高度和宽度
-						height: hValue,
-						left: ("-" + (0.3 * $(this).width()) / 2), //给图片增加多少个像素，然后就给他去掉多少个像素（这里是去掉）
-						top: ("-" + (0.3 * $(this).height()) / 2) //给图片增加多少个像素，然后就给他去掉多少个像素（这里是去掉）
-					}, 600); //执行动画的时长
-				}).mouseleave(function() {
-					//这里是动画效果的移除，让图片恢复原来的大小
-					$(this).stop().animate({
-						width: "250px", //在哪里添加了一个stop是每次只执行一次动画
-						height: "170px",
-						left: "0px",
-						top: "0px"
-					}, 500);
-				})
-			});
-		</script>
+				}, 5000);
+
+				/*这是学生明星的轮播*/
+
+				var mingxingli = $(".jiuye .jiuye-1 ul li");
+				var changCount = mingxingli.length;
+				var mingxingul = $(".jiuye .jiuye-1 ul");
+				index = 0;
+				setInterval(function() {
+					index = (index + 1) % changCount;
+					mingxingul.animate({
+						left: -mingxingli.width() * index + "px"
+					}, 500)
+
+				}, 1000);
+
+				//切换
+
+				var shang = $(".kaiban .shang-1 ul li"); //先获取到导航栏的li
+				var kaiban = $(".kaiban .xia-1 ul"); //再获取到下面的ul（就是下面的课程内容）
+
+				//给获取到的li一个hover效果
+				shang.hover(function() {
+					var index = $(this).index(); //先获取当前的li下标
+					if(index > 0) { //因为第一个不动 所以要大于0
+						shang.removeClass("qiehuan").eq(index).addClass("qiehuan"); //先给让所有的li都没有hover后的效果，然后再给上hover效果  前提：要先把效果写在style里面
+						kaiban.hide().eq(index - 1).show();
+					} //所有ul都影藏掉，让获取到的li那个ul显示
+
+				});
+				var zuoping = $(".zuoping .top-shang ul li");
+				var tupian = $(".zuoping .xia-bottom ul");
+				zuoping.hover(function() {
+					var index = $(this).index();
+					if(index > 0) {
+						zuoping.removeClass("huan").eq(index).addClass("huan");
+						tupian.hide().eq(index - 1).show();
+					}
+				});
+
+				//图片放大
+				//获取到图片给了一个mouseenter事件
+				$(function() {
+					$(".zuoping .xia-bottom ul li img").mouseenter(function() {
+						var wValue = 1.3 * $(this).width(); //预设一个图片放大以后的宽度（这里是增加）
+						var hValue = 1.3 * $(this).height(); //预设一个图片以后的高度（这里是增加）
+						$(this).stop().animate({
+							width: wValue, //这是一个动画，动画运行结束后达到的高度和宽度
+							height: hValue,
+							left: ("-" + (0.3 * $(this).width()) / 2), //给图片增加多少个像素，然后就给他去掉多少个像素（这里是去掉）
+							top: ("-" + (0.3 * $(this).height()) / 2) //给图片增加多少个像素，然后就给他去掉多少个像素（这里是去掉）
+						}, 600); //执行动画的时长
+					}).mouseleave(function() {
+						//这里是动画效果的移除，让图片恢复原来的大小
+						$(this).stop().animate({
+							width: "250px", //在哪里添加了一个stop是每次只执行一次动画
+							height: "170px",
+							left: "0px",
+							top: "0px"
+						}, 500);
+					})
+				});
+			</script>
 
 	</body>
 
