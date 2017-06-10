@@ -22,6 +22,10 @@ a{
 	
 }
 
+ul{
+	list-style: none;
+}
+
 .w{
 	width: 1200px;
 	margin-left: auto;
@@ -889,6 +893,7 @@ color: #333;
 
 .jiuye .jiuye-2 ul{
 	width: 10000px;
+	position: relative;
 	
 }
 
@@ -951,4 +956,343 @@ color: #333;
 	color: #A9A9A9;
 	font-size: 12px;
 	line-height: 2em;
+}
+
+
+/*非凡荣誉*/
+
+.rong{
+	height: 540px;
+	background-color:#f3f3f3 ;
+	margin-top: 30px;
+}
+
+
+.rong .feifan{
+	height: 40px;
+	line-height: 40px;
+	font-size: 18px;
+	background-color: #FFFFFF;
+}
+
+.rong .jiangbei{
+	padding-top: 20px;
+	height: 500px;
+}
+
+.rong .jiangbei ul{
+	list-style: none;
+	height: 227px;
+	padding: 0 15px;
+	text-align: center;
+	margin: 0;
+}
+
+.rong .jiangbei ul.top-mian{
+	margin-bottom: 20px;
+	
+}
+
+.rong .jiangbei ul li{
+	float: left;
+	margin-right:30px ;
+}
+
+.rong .jiangbei ul li:last-child{
+	margin: 0;
+}
+
+
+/*校区分布*/
+
+.xiaoqu{
+	height: 250px;
+	background-colo;
+	margin-top: 30px;
+}
+
+
+
+.xiaoqu span p{
+	color: #333333;
+	height: 40px;
+	line-height: 40px;
+	font-size: 18px;
+	background-color: ;
+	margin: 0;
+	
+}
+
+
+.xiaoqu .xiaoqu-xia{
+	height: 210px;
+	background-color;
+	padding-top: 20px;
+}
+
+.xiaoqu .xiaoqu-xia p{
+	margin: 0;
+}
+
+.xiaoqu .xiaoqu-xia span{
+	margin: 0;
+}
+
+.xiaoqu .xiaoqu-xia ul {
+	list-style: none;
+	margin:0;
+	padding: 0;
+	height: 60px
+}
+
+.xiaoqu .xiaoqu-xia ul.bian{
+	margin: 40px 0;
+	
+}
+
+.xiaoqu .xiaoqu-xia ul li{
+	width: 270px;
+	height: 60px;
+	padding-top:20px ;
+	float: left;
+	margin: 0 15px;
+}
+
+
+.xiaoqu .xiaoqu-xia ul li .wenzi-zuo{
+	font-size: 16px;
+	color: #333333;
+	width: 60px;
+	text-align: center;
+	padding-top:10px ;
+}
+
+
+.xiaoqu .xiaoqu-xia ul li .wenziyou{
+	
+	border-left: 1px solid darkgray;
+	padding-left: 20px;
+	
+}
+
+.xiaoqu .xiaoqu-xia ul li .wenziyou p{
+	margin: 0;
+	font-size: 14px;
+	color: #A9A9A9;
+}
+.xiaoqu .xiaoqu-xia ul li .wenziyou span{
+	margin: 0;
+	font-size: 12px;
+	color:#A9A9A9;
+}
+
+
+
+/*合作企业*/
+
+.hezuo{
+	height:160px ;
+	margin-top: 30px;
+}
+
+.hezuo span li{
+	height: 40px;
+	margin: 0;
+	padding: 0;
+	line-height: 40px;
+	list-style: none;
+	font-size: 18px;
+}
+
+.hezuo .qiye{
+	
+	height: 120px;
+	position: relative;
+	background-color: #fafafa;
+}
+
+
+.hezuo .qiye .box-zhong{
+	width:1120px ;
+	height: 120px;
+	position: absolute;
+	top: 0;
+	left: 40px;
+	padding-top: 17px;
+	box-sizing: border-box;
+	overflow: hidden;
+}
+
+.hezuo .qiye .box-zhong ul{
+	padding: 0;
+	margin: 0;
+	width: 10000px;
+}
+.hezuo .qiye .box-zhong ul li{
+	height: 82px;
+	width: 176px;
+	background-color: red;
+	float: left;
+	margin-right: 11px;
+}
+
+.hezuo .qiye .box-zhong ul li img{
+	height: inherit;
+	width: inherit;
+}
+
+.hezuo .qiye .box-zhong ul li:last-child{
+	margin: 0;
+}
+
+.hezuo .qiye .box-zhong ul li:first-child{
+	
+	margin-left: 5px;
+}
+
+
+.hezuo .qiye .yi{
+	height: 120px;
+	width: 30px;
+	color: #A9A9A9;
+}
+
+.hezuo .qiye .noe-4{
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+
+.hezuo .qiye .one-1{
+	font-size: 40px;
+	line-height: 120px;
+}
+
+.hezuo .qiye .noe-4{
+	font-size: 40px;
+	line-height: 120px;
+}
+
+
+
+/*尾部*/
+.weibu{
+	height: 575px;
+	background-color:#FAFAFA;
+	margin-top: 40px;
+}
+
+
+.weibu .wei-top{
+	height: 130px;
+	padding-top: 45px;
+	box-sizing: border-box;
+	border-bottom: 1px solid #A9A9A9;
+	box-sizing: border-box;
+	
+}
+
+.weibu .wei-top ul{
+	margin: 0;
+	padding: 0;
+}
+
+.weibu .wei-top ul li img{
+	margin: 0 10px;
+}
+
+.weibu .wei-top ul li{
+	width: 160px;
+	float: left;
+	margin-right: 48px;
+}
+
+.weibu .wei-top ul li:last-child{
+	margin: 0;
+}
+
+.weibu .wei-top ul li p{
+	font-size: 14px;
+	color: #A9A9A9;
+	margin: 0;
+}
+.weibu .wei-top ul li span{
+	color: #A9A9A9;
+	font-size: 12px;
+	
+}
+
+.weibu .wei-zhong{
+	height: 300px;
+	box-sizing: border-box;
+	border-bottom: 1px solid #A9A9A9l;
+	
+}
+
+.weibu .wei-zhong .zuo-lei{
+	width: 950px;
+	height: 300px;
+	padding-top:20px ;
+	box-sizing: border-box;
+	
+}
+.weibu .wei-zhong .you-er{
+	height: 300px;
+	width: 250px;
+	text-align: center;
+	color: #333333;
+}
+
+.weibu .wei-zhong .zuo-lei table{
+	width: 950px;
+	text-align: center;
+	
+}
+
+.weibu .wei-zhong .zuo-lei table th{
+	height: 30px;
+}
+
+.weibu .wei-zhong .zuo-lei table td{
+	height: 20px;
+}
+
+.weibu .wei-zhong .zuo-lei table th a{
+	color: #333333;
+}
+.weibu .wei-zhong .zuo-lei table td a{
+	color: #A9A9A9;
+}
+
+.weibu .wei-zhong .you-er img{
+	width: 100px;
+	height: 100px;
+	margin: 30px 70px;
+}
+
+
+
+.weibu .wei-zhong .you-er p{
+	font-size: 12px;
+	color: #A9A9A9;
+	margin: 5px;
+}
+
+
+.weibu .weibu-xia .jieshu{
+	height: 70px;
+	padding: 10px 300px;
+	text-align: center;
+	font-size: 14px;
+	color: #A9A9A9;
+	box-sizing: border-box;
+}
+
+.weibu .weibu-xia .jieshu p{
+	margin: 0;
+}
+
+.weibu .weibu-xia .jieshu-tu{
+	text-align: center;
+	padding-top: 10px;
 }
