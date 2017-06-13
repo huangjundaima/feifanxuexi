@@ -1,0 +1,20 @@
+
+.w{
+	width: 1200px;
+	margin: 0 auto;
+}
+
+
+.box{
+	height: 1560px;
+	background-color: yellow;
+	position: relative;
+}
+
+.box .zuo{
+	width: 220px;
+	height: 390px;
+	background-color: red;
+	position: absolute;
+	
+}
